@@ -15,6 +15,6 @@ ALTER TABLE Movie ADD COLUMN GenreId INTEGER REFERENCES Genre
 (GenreId);
 SELECT *
 FROM Movie;
-
-
-
+UPDATE Movie SET GenreId=22 WHERE id=1;
+SELECT *
+FROM Movie;
