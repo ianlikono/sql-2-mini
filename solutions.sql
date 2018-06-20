@@ -11,3 +11,7 @@ VALUES
     ( "amazing", 3 );
 SELECT *
 FROM Movie;
+ALTER TABLE Movie ADD COLUMN GenreId INTEGER REFERENCES Genre
+(GenreId);
+SELECT *
+FROM Movie;
